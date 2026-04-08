@@ -26,16 +26,31 @@ print (float_sum)
 # 8 tampilkan tipde daata dari x_float
 type(float_sum)
 
-import tensorflow as tf
 
-# 1buat
-x_tf = tf.Variable(15, dtype=tf.int16)
-# 2
-print( x.dtype)
-# 3
-y_tf = tf.Variable(10, dtype=tf.int16)
-# 4
-print( y.dtype)
-# 5
-tf_sum = tf.add(x_tf, y_tf)
-tf_sum
+import torch
+
+# 1 buat variabel skalar x dan simpan suatu nilai skalar
+x_pt = torch.tensor(15)
+
+# 2 tampilkan tipe data dari x
+print(x_pt.dtype)
+
+# 3 buat variabel skalar y dan simpan suatu nilai skalar
+y_pt = torch.tensor(10)
+
+# 4 tampilkan tipe data dari y
+print(y_pt.dtype)
+
+# 5 jumlahkan x+y
+pt_sum = x_pt + y_pt
+print(pt_sum)
+
+# 6 buat variabel bernama x_float dan simpan suatu nilai desimal
+x_float_pt = torch.tensor(3.14)
+
+# 7 jumlahkan x_float dengan y
+pt_float_sum = x_float_pt + y_pt
+print(pt_float_sum)
+
+# 8 tampilkan tipe data dari x_float
+print(x_float_pt.dtype)
