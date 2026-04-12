@@ -14,7 +14,7 @@ if bukti1 == 0:
 else:
   print(f'i dan j bukan orthogonal karena hasil akhirnya {bukti1}')
 
-"""**SOAL NO 2 (Basis, Orthogonal, and Orthonormal Vectors)**"""
+#NOMOR 2
 
 # Bagaimana dengan v=(1,2) dan w=(2,-1), apakah juga orthogonal?
 v = np.array([1, 2])
