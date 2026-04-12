@@ -54,3 +54,32 @@ print(pt_float_sum)
 
 # 8 tampilkan tipe data dari x_float
 print(x_float_pt.dtype)
+
+import tensorflow as tf
+
+x_tf = tf.Variable(25)
+
+# tampilkan tipe data dari x_tf (Tensorflow)
+print(f'Type dari x_tf adalah: {type(x_tf)}')
+
+# buat variabel skalar y_tf dan simpan suatu nilai skalar (Tensorflow)
+y_tf = tf.Variable(50)
+
+# tampilkan tipe data dari y_tf (Tensorflow)
+print(f'Type dari y_tf adalah: {type(y_tf)}')
+
+# jumlahkan x_tf + y_tf (Tensorflow)
+penjumlahan3 = x_tf + y_tf
+print(penjumlahan3)
+
+# buat variabel bernama x_float_tf dan simpan suatu nilai desimal (Tensorflow)
+x_float_tf = tf.Variable(3.90)
+
+# jumlahkan x_float_tf dengan y_tf (Tensorflow)
+y_float_tf = float(y_tf)
+penjumlahan4 = x_float_tf + y_float_tf
+print(penjumlahan4)
+
+# tampilkan tipe data dari x_float_tf (Tensorflow)
+print(f'Type dari x_float_tf adalah: {type(x_float_tf)}')
+
